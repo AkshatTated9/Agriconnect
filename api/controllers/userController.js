@@ -155,7 +155,7 @@ exports.updateUserDetails = async (req, res) => {
     const updatedUser = await user.save()
     cookieToken(updatedUser, res)
   } catch (error) {
-    res.status(500).json({ message: "Internal server error" }, error)
+    res.status(500).json({ message: 'Internal server error' });
   }
 }
 
